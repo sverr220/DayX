@@ -1,4 +1,14 @@
 <resources>
+
     <string name="app_name">dayx</string>
+    <string name="app_version">1.0.alpha.1</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="user_name_def">Гость</string>
+    <string name="user_company_def">Company</string>
+
 </resources>

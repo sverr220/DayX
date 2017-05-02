@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="dayx.home13.ru.dayx.MainActivity"
+    tools:context="dayx.home13.ru.dayx.ui.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView

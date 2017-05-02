@@ -1,4 +1,4 @@
-package dayx.home13.ru.dayx;
+package dayx.home13.ru.dayx.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import dayx.home13.ru.dayx.R;
 
 public class MainActivity extends AppCompatActivity {
 
