@@ -1,5 +1,6 @@
 package dayx.home13.ru.dayx.fcm;
 
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.os.Bundle;
 import java.util.Map;
 
 import dayx.home13.ru.dayx.application.DayApplication;
+import dayx.home13.ru.dayx.utils.Notif;
 
 public class FCMManager {
 
@@ -144,11 +146,11 @@ public class FCMManager {
      * @param message Распарсеное сообщение
      */
     private void showNotification(final Context context, final FCMMessage message) {
-        /*String title = message.getTitle(context);
-        String body = message.getNotificationBody();
-        PendingIntent pendingIntent = message.getPendingIntent(context, isBackground());
+        String title = message.getTitle();
+        String body = message.getBody();
+        PendingIntent pendingIntent = message.getPendingIntent(context, isBackground(context));
 
-        TMNotification.showPush(context, title, body, pendingIntent);*/
+        Notif.showPush(context, title, body, pendingIntent);
     }
 
     private void saveMessage(FCMMessage message) {
