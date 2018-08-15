@@ -45,7 +45,7 @@
     </LinearLayout>
 
     <TextView
-        android:text="@string/regist"
+        android:text="t"
         android:gravity="center_vertical"
         android:drawableLeft="@android:drawable/star_on"
         android:layout_width="match_parent"

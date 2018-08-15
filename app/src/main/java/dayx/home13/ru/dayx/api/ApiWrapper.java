@@ -35,15 +35,15 @@ public class ApiWrapper {
                                           final JSONObject jsonObject,
                                           final IRegisteredListener listener) {
         try {
-            ApiSender.registeredTokenRequest(context, token, jsonObject,
+            /*ApiSender.registeredTokenRequest(context, token, jsonObject,
                     new ResultListener() {
                         @Override
                         public void onResult(int code, JSONObject data) {
                             listener.onResult(code == NETWORK_CODE_SUCCESS_REQ
                                     || code == NETWORK_CODE_SUCCESS_CREATE);
                         }
-                    });
-        } catch (UnsupportedEncodingException e) {
+                    });*/
+        } catch (Exception e) {
             Logger.error(e);
         }
     }
@@ -56,7 +56,7 @@ public class ApiWrapper {
      */
     public static void loadSettings(final Context context, final String marketCrewId) {
         try {
-            ApiSender.getSettingsRequest(context, marketCrewId,
+            /*ApiSender.getSettingsRequest(context, marketCrewId,
                     new ResultListener() {
                         @Override
                         public void onResult(int code, JSONObject data) {
@@ -68,8 +68,8 @@ public class ApiWrapper {
                                 }
                             }
                         }
-                    });
-        } catch (UnsupportedEncodingException e) {
+                    });*/
+        } catch (Exception e) {
             Logger.error(e);
         }
     }
